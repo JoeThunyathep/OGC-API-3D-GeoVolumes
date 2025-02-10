@@ -2,6 +2,8 @@
 
 This is the NodeJS implementation of the 3D GeoVolumes server – an open source project that implements the OGC API standards for handling and distributing 3D geospatial data. The project is designed to seamlessly manage 3D city models and geospatial volumes for interoperability with various geospatial tools.
 
+![image](https://github.com/user-attachments/assets/05e6975b-d90a-4030-bd8b-971cc04c19e2)
+
 ## Features
 
 - **OGC API 3D GeoVolumes:** Serves 3D geospatial data in compliance with OGC standards.
@@ -39,6 +41,7 @@ The project settings can be adjusted in the `config.json` file located at the ro
 {
 "host_url": "http://localhost:3000"
 }
+```
 
 This value is used to dynamically generate links within the application.
 
