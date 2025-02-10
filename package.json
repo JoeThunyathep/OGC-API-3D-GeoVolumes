@@ -1,0 +1,24 @@
+{
+  "name": "ogc-api-3d-geovolumes",
+  "version": "1.0.0",
+  "description": "Implementation of OGC API 3D GeoVolumes in NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "OGC",
+    "API",
+    "3D",
+    "GeoVolumes"
+  ],
+  "author": "Thunyathep Santhanavanich (Joe)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "ua-parser-js": "^2.0.2",
+    "winston": "^3.17.0"
+  }
+}

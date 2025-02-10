@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../ogc_api/head_dependency.ejs') %> 
+
+    <title>HFT OGC API 3D GeoVolumes</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <%- include('../ogc_api/header.ejs') %> 
+        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';" class="fs-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="<%=host_url%>">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">OGC API 3D GeoVolumes</li>
+            </ol>
+        </nav>
+        See this response in raw <code>JSON</code> format: <a href="?f=json">json</a> <br>
+
+        <hr>
+        <div id="collections_div">
+            <h3> <%= landingpage_output["title"] %> </h3>
+            <span class="mb-4"> <%= landingpage_output["description"] %> </span>  <br>
+            <b>Links</b>: <br>
+                
+            <div class="collections_contents"></div>
+                <% for(var i=0; i < landingpage_output["links"].length; i++) { %>
+                        <a href="<%= landingpage_output["links"][i]["href"]%>">
+                        <%= landingpage_output["links"][i]["title"]%> </a>
+                        <br>
+                <% } %>
+        </div>
+            
+        <%- include('../ogc_api/footer.ejs') %> 
+            
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    </script>
+
+</body>
+
+</html>
