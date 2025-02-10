@@ -162,4 +162,4 @@ DOI: http://doi.org/10.24407/KXP:1796036099
 
 ## Contact
 
-Developed by **Thunyathep Santhanavanich (Joe)**. If you encounter any issues or have questions, please contact via [LinkedIn](https://www.linkedin.com/in/thunyatheps/) or consult the footer of the application for additional contact details.
+Developed by **Thunyathep Santhanavanich (Joe)**. If you encounter any issues or have questions, please contact via [LinkedIn](https://www.linkedin.com/in/thunyatheps/)
