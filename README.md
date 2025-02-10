@@ -68,6 +68,32 @@ By default, the server listens on port 3000. You can view the landing page at [h
 - **Collection by ID:** `/ogc_api_geovolumes/collections/:collectionsId`
   - Returns detailed JSON data for a specific collection based on its identifier.
 
+## Add Your First Collection for Your 3D Container
+
+To publish your own 3D geospatial container collection, you can add a new entry to the `collections.json` file located at:
+
+```
+ogc_api_geovolumes/collections/collections.json
+```
+
+Follow the template of the existing collection (e.g., `Stuttgart-Example-Collections`) by copying an existing block and modifying the appropriate fields:
+
+- **id**: A unique identifier for your collection (e.g., `"Your-City-Collection"`).
+- **title**: A short, descriptive title for your collection.
+- **description**: A brief description of what your 3D container represents.
+- **collectiontype**: Typically remains `"3d-container"` for these types of collections.
+- **extent**: Define the spatial extent. Update the bounding box coordinates and the Coordinate Reference System (CRS) if needed.
+- **links**: Update the URLs that reference your collection, including self-references and links to actual data (e.g., 3D Tiles, gltf, etc.).
+- **children** and **content**: Optionally, add nested elements or detailed resource references for your collection.
+
+After editing and saving the file, reload your NodeJS server to apply the changes. If your server is already running, simply restart it:
+
+```bash
+node server.js
+```
+
+Your new collection will now appear alongside the existing ones.
+
 ## Project Structure
 
 ├── config.json # Application configuration settings
