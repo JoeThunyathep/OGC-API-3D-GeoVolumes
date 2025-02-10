@@ -17,8 +17,9 @@ This is the NodeJS implementation of the 3D GeoVolumes server – an open source
 
 - Node.js (v12 or later) / Ensure that Node.js is installed on your machine.  
   [Download Node.js](https://nodejs.org/)
+- (or Docker)
 
-## Installation
+## Installation and Run with NodeJS
 
 1. **Clone the Repository:**
 
@@ -32,6 +33,24 @@ This is the NodeJS implementation of the 3D GeoVolumes server – an open source
    ```bash
    npm install
    ```
+## Installation and Run with Docker
+Alternatively, you can run the application inside a Docker container:
+
+1. **Build the Docker image:**
+
+    ```bash
+    docker build -t ogcapi-3d-geovolumes .
+    ```
+
+2. **Run the Docker container:**
+
+    ```bash
+    docker run -p 3000:3000 ogcapi-3d-geovolumes
+    ```
+
+This will start the app inside a container, mapping port 3000 of the host to port 3000 of the container.
+
+## API Endpoints
 
 ## Configuration
 
