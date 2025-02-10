@@ -96,18 +96,20 @@ Your new collection will now appear alongside the existing ones.
 
 ## Project Structure
 
-├── config.json # Application configuration settings
-├── server.js # Main Express server entry point
-├── package.json # Project metadata and dependencies
-├── LICENSE # Apache License 2.0
-├── README.md # This documentation file
-├── static/ # Static assets such as images and CSS
-├── views/ # EJS templates for HTML rendering
-│ ├── ogc_api/ # Base templates and partials for landing and footer
-│ └── geovolumes/ # Templates specific to the GeoVolumes service
-└── routes/ # Express route handlers
-└── ogc_api_geovolumes.js # Routes for the 3D GeoVolumes API endpoints
-
+```
+.
+├── config.json                  # Application configuration settings
+├── server.js                    # Main Express server entry point
+├── package.json                 # Project metadata and dependencies
+├── LICENSE                      # Apache License 2.0
+├── README.md                    # This documentation file
+├── static/                      # Static assets such as images and CSS
+├── views/                       # EJS templates for HTML rendering
+│   ├── ogc_api/                # Base templates and partials for landing and footer
+│   └── geovolumes/             # Templates specific to the GeoVolumes service
+└── routes/                      # Express route handlers
+    └── ogc_api_geovolumes.js    # Routes for the 3D GeoVolumes API endpoints
+```
 
 ## Contributing
 
@@ -124,6 +126,8 @@ This project is licensed under the [Apache License 2.0](LICENSE). Please review 
 ## Citation
 
 If you use this project in your research, please cite the related publication:
+
+DOI: http://doi.org/10.24407/KXP:1796036099
 
 ```
 @inproceedings{santhanavanich2022digital,
